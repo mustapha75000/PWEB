@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Ajout vehicule{% endblock %}
+
+{% block body %}
+		<section class="container-fluid about">
+			<div class="container">
+				<div class="row align-items-top">
+					<article class="col-12">
+						<div class="jumbotron">
+						  <div class="container">
+						  	<p>Ajout-Vehicule<p>
+                            {{ form(vehiculeForm) }}
+						  </div>
+						</div>
+					</article>
+				</div>
+			</div>	
+		</section>
+{% endblock %}

@@ -1,0 +1,64 @@
+{% extends 'base.html.twig' %}
+
+
+
+{% block title %}Accueil{% endblock %}
+
+{% block body %}
+
+		<header class="container-fluid header">
+			<div class="container">
+				<nav class="navbar navbar-expand-lg navbar-light bg-danger fixed-top">
+				  <a class="navbar-brand" href="{{ path('app_home') }}">CartesiaLocation</a>
+				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				  </button>
+
+				  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ml-auto">
+					    <li class="nav-item">
+						<a class="nav-link" href="{{ path('app_home') }}"><i class="fas fa-home"></i>Accueil</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link" href="{{ path('app_login') }}"><i class="fas fa-user"></i></i>Connexion</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link" href="{{ path('app_register') }}"><i class="fas fa-pen"></i>Inscription</a>
+					  </li>
+					</ul>
+				  </div>
+				</nav>
+			</div>	
+		</header>
+		<!-- fin header-->
+
+		<!-- bannière -->
+
+		<!-- fin bannière-->
+
+		<!-- contenu -->
+
+		<section class="container-fluid about">
+			<div class="container">
+				<div class="row align-items-top">
+					<article class="col-12">
+						<div class="jumbotron">
+						  <div class="container">
+						  	<p>Vehicule disponible :<p>
+						  </div>
+						</div>
+					</article>
+                    {% for vehicule in vehicules %}
+                    <article class="col-12">
+						<div class="jumbotron">
+						  <div class="container">
+                                <h2>{{ vehicule.typeVehicule }}</h2>
+                                <h2><img src="{{ vehicule.photoVehicule}}" width="1000px"></h2>
+						  </div>
+						</div>
+					</article>
+                    {% endfor %}
+				</div>
+			</div>	
+		</section>
+{% endblock %}

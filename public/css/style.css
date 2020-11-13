@@ -1,0 +1,132 @@
+body, html {
+	padding: 0px;
+	margin: 0px;
+}
+
+body {
+    font-family: 'Text Me One', sans-serif;
+	background-image: url(../image/fond-bleu.JPG);
+}
+
+img {
+	border-radius: 8px;
+}
+
+a, a:hover {
+	text-decoration: none;
+	transition: all 1s ease-out;
+}
+
+
+.container-fluid {
+	padding: 0;
+	min-height: 10vh;
+}
+
+/* header */
+
+.navbar-light .navbar-nav .nav-link  i{
+	padding-right: 7px;
+}
+
+/*Couleur blanche sur les nom des menus de la navbar*/
+.navbar-light .navbar-nav .nav-link {
+	color: white;
+	font-size: 25px;
+
+}
+
+/*Couleur grise (secondary bootstrap) du fond à la navbar*/
+.dropdown-menu{
+    background-color: #6c757d;
+}
+
+/*Couleur grise (secondary bootstrap) du fond aux sous-menus de la navbar au survol de celle-ci*/
+.dropdown-item:hover{
+    background-color: #6c757d;
+}
+
+
+/*Couleur blanche aux nom des sous-menus de la navbar*/
+.dropdown-item{
+    color: white;
+}
+
+/*Couleur noir aux nom des sous-menus de la navbar au survol de celle-ci*/
+.dropdown-item:hover{
+    color: black;
+}
+
+
+
+/* bannière */
+
+.banner {
+	width: 100%;
+	max-width: 100%;
+}
+
+.ban {
+	width: 100%;
+	max-width: 100%;
+}
+
+.ban img {
+	width: 100%;
+	max-width: 100%;
+	clip-path: polygon(50% 0%, 100% 0, 100% 100%, 50% 100%, 0 86%, 0 0);
+}
+
+.inner-banner {
+	position: absolute;
+	top: 25%;
+	width: 100%
+}
+
+article{
+    padding: 100px;
+    text-align: center;
+	padding-right: 5px;
+	padding-bottom: 0px;
+}
+
+
+.navbar-light .navbar-brand {
+	color: white;
+}
+
+ img {
+     -webkit-transition: width 0.2s; 
+     transition: width 0.2s;
+}
+
+@media screen and (max-width: 1200px) {
+	h1, h2, h3, h4, p {
+		font-size: 1.2em;
+	}
+	
+	video{
+
+        width: 100%;
+        height: auto;
+    }
+
+    audio {
+	width: 250px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	h1, h2, h3, h4, p {
+		font-size: 3em;
+	}
+
+	video{
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+/* contact */
+
